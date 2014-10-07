@@ -307,7 +307,7 @@ class U2FChallenge(object):
         signResponse = {
             "clientData": string, //b64 encoded JSON of ClientData
             "signatureData": string, //b64 encoded raw sign response
-            "keyHandle": string, //b64 encoded key handle
+            "challenge": string, //b64 encoded challenge
         }
         """
         if not isinstance(response, SignResponse):
